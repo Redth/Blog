@@ -4,6 +4,7 @@ seoTitle: ".NET MAUI Popup Pages - no NuGet, Plugin, mopups or community toolkit
 datePublished: Mon Dec 18 2023 16:57:04 GMT+0000 (Coordinated Universal Time)
 cuid: clqb5s3xo000408l98ojd37je
 slug: popups-with-net-maui-no-plugin-nuget-needed
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1702996064088/2b87bdc3-3d72-4d71-99ff-a8ff63e8e836.png
 tags: dotnet, dotnet-maui
 
 ---
