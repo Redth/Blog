@@ -51,13 +51,22 @@ Inside the page content, let's add a `Grid` which contains a `Border`. The `Bord
 
 This gives us a simple page we can navigate to and show some content on.
 
+### ModalPresentationStyle on iOS/MacCatalyst
+
+Originally when I first wrote this code for my own app, I found that I needed to use the iOS platform specific `ModalPresentationStyle` set to `OverFullScreen` to display properly. It seems now that may be unnecessary. In any case, adding the code doesn't seem to be harmful, so you may want to add these attributes to the `ContentPage` tag in your popup page XAML to be safe:
+
+```xml
+xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+ios:Page.ModalPresentationStyle="OverFullScreen"
+```
+
 ## Showing the Popup
 
 Since this is a `ContentPage`, the way we will actually display the page is by navigating to it as a Modal page. On our main page, in our button click event, we can show the popup just by writing:
 
 `await Navigation.PushModalAsync(new PopupPage());`
 
-However, if you run this code now for iOS, you'll see it's not quite yet what we are hoping to achieve:  
+However, if you run this code now for iOS, you'll see it's not quite yet what we are hoping to achieve:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1702917461475/562b2f01-483f-4bae-babc-c4ed3515e0f2.gif align="center")
 
