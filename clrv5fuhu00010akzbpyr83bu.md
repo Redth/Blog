@@ -8,6 +8,6 @@ tags: dotnet, dotnet-maui
 
 ---
 
-After far too long, the \[GoneMobile.io\]([https://www.gonemobile.io](https://www.gonemobile.io)) podcast has returned!
+After far too long, the [GoneMobile.io](https://www.gonemobile.io) podcast has returned!
 
 Be sure to subscribe with your favorite podcast app to get all the latest episodes.
